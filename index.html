@@ -56,6 +56,7 @@
     p{margin:0 0 15px}
     .lead{font-family:var(--serif);font-size:1.1rem;line-height:1.85}
     .section-no{font-family:var(--sans);font-size:.72rem;color:var(--accent);letter-spacing:.12em;display:block;margin-bottom:9px}
+    .latest-entry{border-top:3px solid var(--ink);padding-top:18px}.latest-entry h3{margin:0 0 20px;font-size:1.34rem}.latest-entry h4{font-family:var(--sans);font-size:.92rem;color:var(--accent);margin:24px 0 8px}.latest-entry ul{margin:0;padding-left:1.25rem}.latest-entry li{padding:4px 0}.update-source{border-top:1px solid var(--rule);margin-top:25px;padding-top:13px;font-size:.76rem;color:var(--muted)}
     .source-tags{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0 0}
     .source-tags a{font-size:.7rem;text-decoration:none;border:1px solid var(--rule);padding:4px 8px;color:var(--muted);background:var(--panel)}
     .source-tags a:hover,.source-tags a:focus-visible{border-color:var(--accent);color:var(--accent)}
@@ -126,6 +127,7 @@
   <main id="main" class="layout">
     <nav class="toc" aria-label="文章目錄">
       <div class="toc-label">閱讀目錄</div>
+      <a href="#latest">審訊最新進展</a>
       <a href="#overview">案件概覽</a>
       <a href="#victim">蔡天鳳係邊個</a>
       <a href="#case">案發與調查</a>
@@ -143,10 +145,36 @@
         <label>
           <span style="position:absolute;left:-9999px">前往章節</span>
           <select id="chapterSelect" aria-label="前往章節">
-            <option value="">前往章節…</option><option value="overview">案件概覽</option><option value="victim">蔡天鳳係邊個</option><option value="case">案發與調查</option><option value="accused">七名被捕者</option><option value="trial">主審訊</option><option value="motive">物業與動機</option><option value="outcomes">已完結案件</option><option value="timeline">完整時間線</option><option value="open">未解決事項</option><option value="sources">資料來源</option>
+            <option value="">前往章節…</option><option value="latest">審訊最新進展</option><option value="overview">案件概覽</option><option value="victim">蔡天鳳係邊個</option><option value="case">案發與調查</option><option value="accused">七名被捕者</option><option value="trial">主審訊</option><option value="motive">物業與動機</option><option value="outcomes">已完結案件</option><option value="timeline">完整時間線</option><option value="open">未解決事項</option><option value="sources">資料來源</option>
           </select>
         </label>
       </div>
+
+      <section id="latest">
+        <span class="section-no">審訊最新進展</span>
+        <h2>每日庭訊紀錄</h2>
+        <article class="latest-entry">
+          <h3>2026年10月5日（星期一）· 審訊第9日</h3>
+          <h4>控辯雙方讀出承認事實</h4>
+          <ul>
+            <li>警方喺龍尾村單位爐具上嘅大湯煲內，發現蔡天鳳被砍斷嘅頭部及其他身體組織；小湯煲載有5塊肉及3束頭髮；兩煲同時放有經烹煮嘅青紅蘿蔔。</li>
+            <li>屋內另有一個盛載切碎紅蘿蔔嘅黑色膠袋，袋內冇人體組織或殘肢，底部表面驗出血跡。</li>
+            <li>警方喺單位及兩架涉案車輛採集指紋與DNA樣本，並攞咗三名被告同蔡天鳳家屬嘅身體樣本作比對。</li>
+            <li>政府化驗師毒理學分析：冇發現蔡天鳳濫藥。</li>
+            <li>辯方仍然爭議其中一名被告嘅DNA證據鏈。</li>
+            <li>另承認：三名被告喺2023年2月2日至21日合共18次到訪龍尾村單位；由2月8日起，車牌VY9157七人車多次出入單位；相關閉路電視系統喺錄影時運作正常。</li>
+          </ul>
+          <h4>蔡母張燕花開始作供（控方證人）</h4>
+          <ul>
+            <li><b>身世：</b>張燕花供稱，蔡天鳳係佢同第一任丈夫所生，其後婚姻破裂；蔡約3歲時，張認識現任丈夫（繼父），當時佢開設三間酒樓，兩母女生活舒適；蔡同繼父關係好，改隨繼父姓；張之後再誕下兩名女兒，一家關係密切。</li>
+            <li><b>財務來源：</b>張供稱，買加多利山單位之前，蔡天鳳自己已有「一、兩億元」資產；2016年同譚方駿擺酒後，譚家不斷俾錢佢投資，分批共收到8,000萬元支票，動用其中6,800萬元買入加多利山單位，再花逾900萬元裝修，供佢同前夫鄺港智所生嘅子女及鄺家人居住；張話譚家「最少俾咗3億幾」俾蔡天鳳。</li>
+            <li>張供稱，為慳900多萬印花稅，佢建議「用鄺球名，唔洗俾咁多稅」，單位登記喺鄺球名下；鄺球當時承諾，只要蔡天鳳要求交出單位就會「事事都配合」。</li>
+            <li>張供稱，2022年因細女轉校去屯門，蔡天鳳考慮賣樓搬屯門，鄺球激烈反對，「要打要殺」、「唔肯交層樓出嚟」。被問到會唔會係送樓俾鄺球，張斷言「無可能」：「（鄺家）全家都食我哋，仲點會送層樓俾佢哋，一樽奶粉都無俾過錢」。</li>
+            <li>張供稱，蔡天鳳曾喺港大進修金融，擅長理財投資；張話佢做模特兒賺得唔多，「買股票應該係賺多啲」，亦有拍賣手錶手袋，「其實佢做好多樣嘢」。</li>
+          </ul>
+          <p class="update-source">資料來源：香港01 2026-10-05、法庭線 Day 9 庭訊報道（經 Yahoo 新聞轉載）、lawaidhk.com 整理。審訊進行中，所有控方指稱均為指控，未有裁決。</p>
+        </article>
+      </section>
 
       <section id="overview">
         <span class="section-no">01／案件概覽</span>
